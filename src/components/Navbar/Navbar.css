@@ -1,0 +1,126 @@
+.glass-navbar {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 15px;
+  padding: 10px 20px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+.navbar-scrolled {
+  background: rgba(15, 12, 40, 0.9);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.7);
+}
+
+/* Logo */
+.logo-img {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.1) rotate(-3deg);
+  box-shadow: 0 0 25px #6c5ce7, 0 0 40px #4c6ef5;
+}
+
+.brand-text {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #e0e0ff;
+  text-shadow: 0 0 8px #6c5ce7;
+}
+
+/* Neon links */
+.neon-link {
+  color: #cfcfff;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.neon-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: #6c5ce7;
+  transition: width 0.3s ease;
+}
+
+.neon-link:hover::after {
+  width: 100%;
+}
+
+.neon-link:hover {
+  color: #8f88ff;
+  text-shadow: 0 0 8px #6c5ce7, 0 0 12px #8f88ff;
+}
+
+/* Glass dropdown */
+.glass-dropdown {
+  background: rgba(30, 30, 50, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.glass-dropdown .dropdown-item {
+  color: #e0e0ff;
+  transition: all 0.3s ease;
+}
+
+.glass-dropdown .dropdown-item:hover {
+  background: rgba(100, 100, 255, 0.2);
+  color: #c0c0ff;
+  transform: translateX(5px);
+}
+
+/* Buttons */
+.neon-btn {
+  background: linear-gradient(135deg, #4c6ef5, #364fc7);
+  border: none;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 8px 25px;
+  transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 15px #4c6ef5, 0 0 30px #364fc7;
+}
+
+.neon-btn-outline {
+  background: transparent;
+  border: 2px solid #4c6ef5;
+  color: #cfcfff;
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 6px 22px;
+  transition: all 0.3s ease;
+}
+
+.neon-btn-outline:hover {
+  background: #364fc7;
+  color: #fff;
+  box-shadow: 0 0 15px #4c6ef5, 0 0 25px #364fc7;
+}
+
+/* Responsive fixes */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-buttons, .d-flex.flex-column {
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar-collapse {
+    gap: 10px;
+  }
+}

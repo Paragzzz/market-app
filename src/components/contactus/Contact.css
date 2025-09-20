@@ -1,0 +1,105 @@
+.contact-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.page-title {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Form Inputs */
+.contact-input {
+  border-radius: 12px;
+  padding: 1rem 0.75rem;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #555;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 15px rgba(79,70,229,0.5);
+  background: rgba(255,255,255,0.15);
+  outline: none;
+  color: #fff;
+}
+
+/* Floating labels */
+.form-floating > label {
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.form-floating > .contact-input:focus ~ label,
+.form-floating > .contact-input:not(:placeholder-shown) ~ label {
+  color: #4f46e5;
+  transform: translateY(-1.5rem) scale(0.85);
+}
+
+/* Neon Submit Button */
+.neon-btn {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(79,70,229,0.7);
+}
+
+/* Info Cards */
+.info-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.info-card h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.map-container iframe {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.map-container:hover iframe {
+  transform: scale(1.02);
+}

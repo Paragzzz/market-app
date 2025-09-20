@@ -1,0 +1,140 @@
+/* Global Gradient Background */
+.signup-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  position: relative;
+}
+
+/* Floating circles for animation */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: float 15s ease-in-out infinite;
+}
+
+.c1 { width: 150px; height: 150px; background: #6c5ce7; top: 10%; left: 10%; }
+.c2 { width: 100px; height: 100px; background: #00b894; top: 30%; right: 15%; animation-duration: 18s; }
+.c3 { width: 180px; height: 180px; background: #fd79a8; bottom: 10%; left: 40%; animation-duration: 20s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-20px) translateX(15px); }
+}
+
+/* Glassmorphism Card */
+.signup-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  position: relative;
+  z-index: 10;
+  transform: translateY(-30px);
+  animation: slideIn 0.8s forwards;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  to { transform: translateY(0); }
+}
+
+/* Logo */
+.signup-logo {
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.signup-logo:hover {
+  transform: rotate(10deg) scale(1.1);
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+/* Titles */
+.signup-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.signup-subtitle {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+/* Input Fields */
+.input-field {
+  border-radius: 15px;
+  padding: 12px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  backdrop-filter: blur(5px);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.input-field:focus {
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+  transform: scale(1.02);
+}
+
+/* Buttons */
+.signup-btn {
+  background: linear-gradient(135deg, #6c5ce7, #fd79a8);
+  border: none;
+  border-radius: 15px;
+  padding: 12px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(253,121,168,0.5);
+}
+
+/* Links */
+.signup-text a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+
+.signup-text a:hover {
+  color: #fd79a8;
+  text-shadow: 0 0 10px rgba(253,121,168,0.5);
+}
+
+.form-check a {
+  color: #fd79a8;
+  text-decoration: none;
+}
+
+.form-check a:hover {
+  text-decoration: underline;
+}
